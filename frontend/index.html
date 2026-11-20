@@ -1,0 +1,169 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agentic AI Chatbot - LangGraph</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div class="app">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar" id="sidebar">
+        <div class="brand">
+            <div class="brand-icon">A</div>
+            <div>
+                <h2>Agentic AI</h2>
+                <span>Agentic AI Workspace</span>
+            </div>
+        </div>
+
+        <button class="new-chat" id="newChatBtn">
+            <span>＋</span> New Conversation
+        </button>
+
+        <div class="side-section">
+            <p class="section-label">WORKSPACE</p>
+            <button class="nav-item active" data-page="chat">💬 <span>Chat Studio</span></button>
+            <button class="nav-item" data-page="knowledge">📚 <span>Knowledge Base</span></button>
+            <button class="nav-item" data-page="tools">⚙️ <span>Tools & Workflow</span></button>
+            <button class="nav-item" data-page="approval">🛡️ <span>Human Approval</span></button>
+            <button class="nav-item" data-page="about">ⓘ <span>About Project</span></button>
+        </div>
+
+        <div class="side-section history-section">
+            <p class="section-label">RECENT CHATS</p>
+            <div id="historyList">
+                <p class="empty-history">Your conversations will appear here.</p>
+            </div>
+        </div>
+
+        <div class="sidebar-bottom">
+            <div class="status-card">
+                <span class="status-dot"></span>
+                <div>
+                    <strong>Backend Status</strong>
+                    <small id="backendStatus">Checking connection...</small>
+                </div>
+            </div>
+
+            <div class="profile">
+                <div class="avatar">S</div>
+                <div>
+                    <strong>Shubham</strong>
+                    <small>Personal Workspace</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <header class="topbar">
+            <button class="mobile-menu" id="menuBtn">☰</button>
+            <div class="breadcrumb">Workspace <span>/</span> <strong id="pageName">Chat Studio</strong></div>
+            <div class="model-pill"><span class="status-dot"></span> Groq AI</div>
+        </header>
+
+        <!-- CHAT PAGE -->
+        <section class="page active" id="chatPage">
+
+            <div class="welcome" id="welcome">
+                <div class="welcome-tag">✦ AGENTIC AI WORKSPACE</div>
+                <h1>What's on your mind today?</h1>
+                <p>Your intelligent AI assistant powered by Groq, LangGraph, RAG and AI Tools.</p>
+
+                <div class="suggestions">
+                    <button class="suggestion" data-prompt="Explain Agentic AI with an example.">✦ Explain Agentic AI</button>
+                    <button class="suggestion" data-prompt="Help me understand LangGraph.">⌘ Learn LangGraph</button>
+                    <button class="suggestion" data-prompt="Explain Retrieval Augmented Generation.">📚 Explain RAG</button>
+                    <button class="suggestion" data-prompt="Write a Python program to find prime numbers.">💻 Coding Assistant</button>
+                </div>
+            </div>
+
+            <div class="chat-area" id="chatArea"></div>
+
+            <div class="composer-wrap">
+                <form id="chatForm" class="composer">
+                    <textarea id="messageInput" rows="1" placeholder="Message Agentic AI Chatbot..."></textarea>
+                    <div class="composer-bottom">
+                        <span class="composer-hint">Groq · LangGraph</span>
+                        <button type="submit" id="sendBtn" aria-label="Send message">↑</button>
+                    </div>
+                </form>
+                <p class="disclaimer">AI can make mistakes. Verify important information.</p>
+            </div>
+        </section>
+
+        <!-- KNOWLEDGE PAGE -->
+        <section class="page" id="knowledgePage">
+            <div class="page-heading">
+                <span class="eyebrow">DOCUMENT INTELLIGENCE</span>
+                <h1>Knowledge Base</h1>
+                <p>Upload PDF documents to build your RAG knowledge base.</p>
+            </div>
+
+            <div class="panel upload-panel">
+                <div class="upload-icon">📄</div>
+                <h3>Upload your PDF</h3>
+                <p>Choose a PDF document from your computer.</p>
+                <input type="file" id="pdfInput" accept=".pdf">
+                <button class="primary-btn" id="uploadBtn">Upload PDF</button>
+                <p id="uploadStatus" class="muted"></p>
+            </div>
+        </section>
+
+        <!-- TOOLS PAGE -->
+        <section class="page" id="toolsPage">
+            <div class="page-heading">
+                <span class="eyebrow">AGENT CAPABILITIES</span>
+                <h1>Tools & Workflow</h1>
+                <p>Tools available to your LangGraph agent.</p>
+            </div>
+
+            <div class="feature-grid">
+                <div class="feature-card"><span>🧮</span><h3>Calculator</h3><p>Perform mathematical calculations through the agent.</p></div>
+                <div class="feature-card"><span>🌐</span><h3>Web Search</h3><p>Optional web search integration, if configured.</p></div>
+                <div class="feature-card"><span>🔗</span><h3>LangGraph</h3><p>Graph-based agent workflow and tool routing.</p></div>
+            </div>
+        </section>
+
+        <!-- APPROVAL PAGE -->
+        <section class="page" id="approvalPage">
+            <div class="page-heading">
+                <span class="eyebrow">HUMAN IN THE LOOP</span>
+                <h1>Human Approval</h1>
+                <p>Review actions that require human confirmation.</p>
+            </div>
+            <div class="panel">
+                <h3>Approval workflow</h3>
+                <p class="muted">Your existing backend approval workflow is separate from this display. Connect its API endpoint here to show pending approvals.</p>
+            </div>
+        </section>
+
+        <!-- ABOUT PAGE -->
+        <section class="page" id="aboutPage">
+            <div class="page-heading">
+                <span class="eyebrow">PROJECT OVERVIEW</span>
+                <h1>Agentic AI Chatbot – LangGraph</h1>
+                <p>Built by Shubham.</p>
+            </div>
+            <div class="feature-grid">
+                <div class="feature-card"><h3>LLM Provider</h3><p>Groq</p></div>
+                <div class="feature-card"><h3>Orchestration</h3><p>LangGraph</p></div>
+                <div class="feature-card"><h3>Retrieval</h3><p>RAG + FAISS (if configured)</p></div>
+            </div>
+        </section>
+
+    </main>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

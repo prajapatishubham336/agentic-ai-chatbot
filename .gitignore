@@ -1,0 +1,15 @@
+
+# 11. .gitignore
+
+```gitignore
+.env
+venv/
+.venv/
+__pycache__/
+*.pyc
+
+data/uploads/*
+data/faiss_index/*
+data/index_meta.json
+
+.streamlit/secrets.toml
