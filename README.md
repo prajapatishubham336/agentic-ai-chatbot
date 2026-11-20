@@ -4,24 +4,26 @@ An intelligent Agentic AI Chatbot built with LangGraph, LangChain, Groq, and Fas
 
 # 🤖 Agentic AI Chatbot
 
-\<p align="center">
-&#x20; \<img src="[https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white](https://img.shields.io/badge/Python-3.10-blue?logo=python\&logoColor=white)" />
-&#x20; \<img src="[https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi\&logoColor=white)" />
-&#x20; \<img src="[https://img.shields.io/badge/LangGraph-Orchestration-1C3C3C](https://img.shields.io/badge/LangGraph-Orchestration-1C3C3C)" />
-&#x20; \<img src="[https://img.shields.io/badge/LangChain-Framework-1C3C3C?logo=langchain&logoColor=white](https://img.shields.io/badge/LangChain-Framework-1C3C3C?logo=langchain\&logoColor=white)" />
-&#x20; \<img src="[https://img.shields.io/badge/Groq-LLM-F55036](https://img.shields.io/badge/Groq-LLM-F55036)" />
-&#x20; \<img src="[https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite\&logoColor=white)" />
-&#x20; \<img src="[https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5&logoColor=white](https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5\&logoColor=white)" />
-&#x20; \<img src="[https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white](https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3\&logoColor=white)" />
-&#x20; \<img src="[https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?logo=javascript&logoColor=black](https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?logo=javascript\&logoColor=black)" />
-&#x20; \<img src="[https://img.shields.io/badge/SSE-Streaming-blue](https://img.shields.io/badge/SSE-Streaming-blue)" />
-&#x20; \<img src="[https://img.shields.io/badge/RAG-Retrieval-purple](https://img.shields.io/badge/RAG-Retrieval-purple)" />
-&#x20; \<img src="[https://img.shields.io/badge/HITL-Human--in--the--Loop-orange](https://img.shields.io/badge/HITL-Human--in--the--Loop-orange)" />
-\</p>
 
-\<p align="center">
-&#x20; An intelligent Agentic AI Chatbot powered by LangGraph, LangChain, Groq, and FastAPI, featuring conversational memory, real-time response streaming, tool integration, Human-in-the-Loop workflows, and document-based AI capabilities.
-\</p>
+<p align="center">
+  <img src="https://img.shields.io/badge/Python-3.10-blue?logo=python&logoColor=white" />
+  <img src="https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white" />
+  <img src="https://img.shields.io/badge/LangGraph-Orchestration-1C3C3C" />
+  <img src="https://img.shields.io/badge/LangChain-Framework-1C3C3C?logo=langchain&logoColor=white" />
+  <img src="https://img.shields.io/badge/Groq-LLM-F55036" />
+  <img src="https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white" />
+  <img src="https://img.shields.io/badge/HTML5-Frontend-E34F26?logo=html5&logoColor=white" />
+  <img src="https://img.shields.io/badge/CSS3-Styling-1572B6?logo=css3&logoColor=white" />
+  <img src="https://img.shields.io/badge/JavaScript-Frontend-F7DF1E?logo=javascript&logoColor=black" />
+  <img src="https://img.shields.io/badge/SSE-Streaming-blue" />
+  <img src="https://img.shields.io/badge/RAG-Retrieval-purple" />
+  <img src="https://img.shields.io/badge/HITL-Human--in--the--Loop-orange" />
+</p>
+
+<p align="center">
+  An intelligent Agentic AI Chatbot powered by LangGraph, LangChain, Groq, and FastAPI, featuring conversational memory, real-time response streaming, tool integration, Human-in-the-Loop workflows, and document-based AI capabilities.
+</p>
+
 
 ---
 
