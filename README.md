@@ -437,7 +437,4 @@ A license has not yet been specified. Add a `LICENSE` file if you intend to dist
 AI / ML Engineer | Generative AI | Machine Learning
 
 
-
-\<p align="center">
-&#x20; ⭐ If you find this project useful, consider giving it a star!
-\</p>
+⭐ If you find this project useful, please consider giving it a star!
